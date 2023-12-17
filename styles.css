@@ -322,6 +322,9 @@ li footer {
     background-color: #e7d329;
     opacity: 80%;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*MAIN BANNERS*/
