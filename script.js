@@ -2,17 +2,29 @@ header.innerHTML = `
 <section class="container">
     <a href="./index.html"><img class="logo" src="https://static.wixstatic.com/media/2292e8_58d612f14d7f4ff3a0052087ecdf1526~mv2.jpg/v1/fill/w_239,h_224,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Untitled%20design%20(1)_edited.jpg" alt="Aspendale Life Saving Club logo"></a>
     <nav>
-        <ul>
-            <li><a href="./aboutus.html">About Us</a></li>
+        <section class="dropdown">
+            <ul>
+                <li class="dropdown"><a href="#">About Us</a><i class="fa-solid fa-caret-down"></i></li>
+                    <section class="dropdown-menu">
+                        <ul>
+                            <li><a href="./aboutus.html">About the club</a></li>
+                            <li><a href="./events.html">Events</a></li>
+                            <li><a href="./merchandise.html">Merchandise</a></li>
+                        </ul>
+                    </section>
+                </li>
+            <ul>
+        </section>
+        <section>
+            <ul>
             <li><a href="./nippers.html">Nippers</a></li>
             <li><a href="./lifesaving.html">Life Saving</a></li>
             <li><a href="./competition.html">Competition</a></li>
             <li><a href="./membership.html">Membership</a></li>
-            <li><a href="./events.html">Events</a></li>
-            <li><a href="./merchandise.html">Merchandise</a></li>
             <li><a href="./contact.html">Contact</a></li>
             <li><a href="./join.html" class="join-button">Join ALSC</a></li>
-        </ul>
+            </ul>
+        </section>
     </nav>      
     <!-- Mobile menu -->
     <div id="hamburger-icon" onClick="toggleMobileMenu(this)">
