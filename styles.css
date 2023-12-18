@@ -415,6 +415,16 @@ li footer {
     display: flex;
 }
 
+.promo-heading-contact {
+    background-image: url(./Images/contact.jpg);
+    background-position: center;
+    min-height: 300px;
+    justify-content: center;
+    align-content: center;
+    background-size: cover;
+    display: flex;
+}
+
 /*MAIN BANNER COPY*/
 .banner {
     position: relative;
@@ -1151,6 +1161,51 @@ input[type="text"], input[type="email"], input[type="tel"] {
     font-weight: 600;
     }
 
+/*CONTACT*/
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 50px;
+    gap: 5px;
+}
+
+#map {
+    height: 500px;
+    width: 90%;
+    margin: 25px auto;
+    padding: 0;
+    border-radius: 15px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: white;
+    padding: 0px;
+    margin: 20px 50px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact-details h2 {
+    font-size: 1.5rem;
+    margin-top: 0px
+}
+
+.contact-details h3 {
+    margin: 10px 0px 5px 0px;
+}
+
+.contact-details p {
+    margin-top: 0px;
+    text-align: left;
+}
+
 /*PROMO FOOTER*/
 .promo-footer {
     display: flex;
@@ -1430,7 +1485,7 @@ footer {
         transition: 0.3s;
     }
 
-    .promo-heading-home, .promo-heading-nippers, .promo-heading-membership, .promo-heading-aboutus, .promo-heading-competition, .promo-heading-lifesaving, .promo-heading-events, .promo-heading-merchandise {
+    .promo-heading-home, .promo-heading-nippers, .promo-heading-membership, .promo-heading-aboutus, .promo-heading-competition, .promo-heading-lifesaving, .promo-heading-events, .promo-heading-merchandise, .promo-heading-contact {
         justify-content: center;
         align-items: center;
         background-size: cover;
@@ -1438,7 +1493,7 @@ footer {
         z-index: 1;
     }
 
-    .promo-heading-nippers, .promo-heading-membership, .promo-heading-aboutus, .promo-heading-competition, .promo-heading-lifesaving, .promo-heading-events, .promo-heading-merchandise {
+    .promo-heading-nippers, .promo-heading-membership, .promo-heading-aboutus, .promo-heading-competition, .promo-heading-lifesaving, .promo-heading-events, .promo-heading-merchandise, .promo-heading-contact {
         background-attachment: fixed;
     }
 
@@ -2026,6 +2081,51 @@ footer {
         text-align: right;
         padding-right: 10px;
     }
+
+/*CONTACT - DESKTOP*/
+.contact {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 250px;
+    gap: 5px;
+}
+
+#map {
+    height: 500px;
+    width: 90%;
+    margin: 50px;
+    padding: 0;
+    border-radius: 15px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: white;
+    padding: 0px 20px;
+    margin: 50px auto;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact-details h2 {
+    font-size: 1.5rem;
+    margin-top: 0px
+}
+
+.contact-details h3 {
+    margin: 10px 0px 5px 0px;
+}
+
+.contact-details p {
+    margin-top: 0px;
+    text-align: left;
+}
 
     /*FOOTER*/
     .footer-nav-grid {
