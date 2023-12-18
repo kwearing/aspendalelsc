@@ -10,6 +10,7 @@ header.innerHTML = `
             <li><a href="./membership.html">Membership</a></li>
             <li><a href="./events.html">Events</a></li>
             <li><a href="./merchandise.html">Merchandise</a></li>
+            <li><a href="./contact.html">Contact</a></li>
             <li><a href="./join.html" class="join-button">Join ALSC</a></li>
         </ul>
     </nav>      
@@ -27,6 +28,7 @@ header.innerHTML = `
             <li><a href="./membership.html">Membership</a></li>
             <li><a href="./events.html">Events</a></li>
             <li><a href="./merchandise.html">Merchandise</a></li>
+            <li><a href="./contact.html">Contact</a></li>
             <li><a href="./join.html" class="join-button">Join ALSC</a></li>
         </ul>   
     </div>
@@ -198,6 +200,22 @@ submitModalBtn.addEventListener('click', function () {
         }
     })
 })
+
+//MAP
+function initMap() {
+    const location = {lat: -38.028030, lng: 145.100720};
+    const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17, 
+        center: location
+    });
+
+    const marker = new google.maps.Marker({
+        position: location,
+        map: map
+    });
+}
+
+
 
 
 
