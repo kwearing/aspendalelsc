@@ -6,7 +6,7 @@ body {
     margin: 0px;
 }
 
-h2, h3, p, li, .button, footer, .join, .table, .table-additional, .scroll-to-top, .membership-options article, .slides, .carousel-item, .carousel-item-details-copy {
+h2, h3, p, li, button, footer, .join, .table, .table-additional, .scroll-to-top, .membership-options article, .slides, .carousel-item, .carousel-item-details-copy {
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
@@ -52,7 +52,6 @@ a:hover {
     text-align: left;
     padding-left: 50px;
 }
-
 
 @keyframes pulse {
     from {
@@ -146,6 +145,7 @@ a:hover {
     padding: 10px 0px;
     margin: 0 auto;
     background-color: white;
+    z-index: 30;
 }
 
 .logo {
@@ -322,6 +322,46 @@ li footer {
     box-shadow: 0 1rem 2.5rem -0.75rem rgba(51,63,72,.22);
     color: black;
     font-weight: 600;
+}
+
+/*DROPDOWN MENU*/
+.dropdown {
+    position: relative;
+    z-index: 10;
+    flex-wrap: wrap;
+}
+
+.dropdown i {
+    padding-left: 5px;
+    color: rgb(25, 153, 144);
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    width: 10rem;
+    cursor: pointer;
+    visibility: hidden;
+    transform: translateY(2rem);
+    transition: opacity 150ms ease-in-out, visibility 0s linear 150ms;
+    z-index: 20;
+}
+
+.dropdown-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(-2px);
 }
 
 /*SCROLL TO TOP*/
@@ -862,6 +902,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
     flex-direction: column;
     justify-content: flex-start;
     justify-items: flex-start;
+    z-index: 900;
 }
 
 .checkbox {
@@ -897,6 +938,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.95);
     pointer-events: none;
+    z-index: 1000;
 }
 
 .modal-copy {
@@ -1443,7 +1485,7 @@ footer {
         justify-content: center;
         align-items: center;
         max-width: 100%;
-        height: auto;
+        height: auto;        
     }
     
     .logo {
@@ -1460,7 +1502,7 @@ footer {
         height: auto;
         width: auto;
         overflow: none;
-        display: block;
+        display: inline-flex;
     }
     
     nav ul {
@@ -1477,7 +1519,7 @@ footer {
         display: inline-block;
         font-weight: 800;
         line-height: 1.5rem;
-        padding: 10px;
+        padding: 15px;
     }
 
     nav li:hover {
