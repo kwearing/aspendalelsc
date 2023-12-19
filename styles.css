@@ -1210,14 +1210,14 @@ input[type="text"], input[type="email"], input[type="tel"] {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 0 50px;
+    margin: 0 20px;
     gap: 5px;
 }
 
 #map {
     height: 500px;
-    width: 90%;
-    margin: 25px auto;
+    width: 100%;
+    margin: 15px auto;
     padding: 0;
     border-radius: 15px;
 }
@@ -1228,7 +1228,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
     text-align: left;
     background-color: white;
     padding: 0px;
-    margin: 20px 50px;
+    margin: 15px 15px;
     width: 100%;
     justify-content: flex-start;
     align-items: flex-start;
@@ -2124,50 +2124,50 @@ footer {
         padding-right: 10px;
     }
 
-/*CONTACT - DESKTOP*/
-.contact {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 0 250px;
-    gap: 5px;
-}
+    /*CONTACT - DESKTOP*/
+    .contact {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 150px;
+        gap: 5px;
+    }
 
-#map {
-    height: 500px;
-    width: 90%;
-    margin: 50px;
-    padding: 0;
-    border-radius: 15px;
-}
+    #map {
+        height: 300px;
+        width: 100%;
+        margin: 50px 20px;
+        padding: 0;
+        border-radius: 15px;
+    }
 
-.contact-details {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    background-color: white;
-    padding: 0px 20px;
-    margin: 50px auto;
-    width: 50%;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background-color: white;
+        padding: 0px 20px;
+        margin: 50px auto;
+        width: 50%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 
-.contact-details h2 {
-    font-size: 1.5rem;
-    margin-top: 0px
-}
+    .contact-details h2 {
+        font-size: 1.5rem;
+        margin-top: 0px
+    }
 
-.contact-details h3 {
-    margin: 10px 0px 5px 0px;
-}
+    .contact-details h3 {
+        margin: 10px 0px 5px 0px;
+    }
 
-.contact-details p {
-    margin-top: 0px;
-    text-align: left;
-}
+    .contact-details p {
+        margin-top: 0px;
+        text-align: left;
+    }
 
     /*FOOTER*/
     .footer-nav-grid {
