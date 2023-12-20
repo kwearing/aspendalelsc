@@ -1100,9 +1100,9 @@ input[type="text"], input[type="email"], input[type="tel"] {
     background-size: contain;
 }
 
-.carousel-inner img {
+.carousel-inner img, .venue-hire-overlay img {
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 20px!important;
     box-shadow: 0 1rem 2.5rem -0.75rem rgba(51,63,72,.22)!important;
     margin: auto;
 }
@@ -1112,7 +1112,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
     height: auto;
 }
 
-#happy-sad-man {
+#happy-sad-man, #venue-hire {
     width: 250px!important;
     height: auto;
 }
@@ -1134,7 +1134,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
     padding-bottom: 5px;
 }
 
-.carousel-item > h1, .carousel-item .active > h1 {
+.carousel-item > h1, .carousel-item .active > h1, .venue-hire-overlay > h1 {
     font-family: 'Antonio', sans-serif!important;
     font-weight: 800;
     text-transform: uppercase!important;
@@ -1142,7 +1142,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
     margin: 15px;
 }
 
-.carousel-item > h2, .carousel-item .active > h2 {
+.carousel-item > h2, .carousel-item .active > h2, .venue-hire-overlay > h2 {
     font-family: 'Roboto', sans-serif!important;
     text-align: center;
     font-size: 1.05rem!important;
@@ -1787,9 +1787,9 @@ footer {
         position: relative;
         top: 30px;
         width: 50vw;
-        min-height: fit-content;
+        min-height: 530px;
         background-color: rgba(255, 255, 255, 0.95);
-        padding: 35px 20px;
+        padding: 25px 20px;
         border-radius: 0.5rem;
         display: flex;
         flex-direction: column;
@@ -1799,11 +1799,11 @@ footer {
 
     .carousel-inner {
         width: 90%;
-        min-height: 85vh;
         justify-content: center;
         margin: 0px;
         position: relative;
         background-size: contain;
+        min-height: 530px;
     }
 
     .carousel-inner img {
@@ -1813,13 +1813,39 @@ footer {
         margin: auto;
     }
 
+    .venue-hire {
+        background-image: url("https://nbrs.com.au/_next/image?url=https%3A%2F%2Fcms.nbrs.com.au%2Fweb%2Fmedia%2F_2400xAUTO_crop_center-center_none%2Fimage-2_1920x1108_2023-05-09-044422_toqd.jpg&w=1920&q=75")!important;
+        height: 200vh;
+        width: 100%;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    .venue-hire-overlay #venue-hire {
+        display: none!important;
+    }
+
+    .venue-hire .carousel-item-details-copy {
+        height: auto;
+        margin: 20px 10px;
+        padding: 25px 80px 80px 80px;
+    }
+
+    .venue-hire-overlay {
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 100%;
+        height: 80%;
+        padding: 35px;
+        border-radius: 10px;
+    }
+
     #club2club-logo, #alsc-logo {
         width: 150px!important;
         height: auto;
     }
 
     #happy-sad-man {
-        width: 400px!important;
+        width: 300px!important;
         height: auto;
     }
 
@@ -1827,6 +1853,10 @@ footer {
         display: flex!important;
         flex-direction: column;
         align-items: center;
+    }
+
+    .carousel-item {
+        padding: 0px 50px;
     }
 
     .carousel-item-details {
