@@ -358,6 +358,17 @@ li footer {
     align-items: flex-start;
 }
 
+.dropdown-menu ul li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #e7d329;
+    width: 90%;
+    text-align: left;
+}
+
+.dropdown-menu ul li:nth-child(3) {
+    border-bottom: 0px;
+}
+
 .dropdown:hover .dropdown-menu {
     visibility: visible;
     transition: opacity 0.5s, transform 0.5s;
