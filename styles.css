@@ -930,7 +930,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
 
 .checkbox.wwc {
     display: grid;
-    grid-template-columns: 5% 80%;
+    grid-template-columns: 4% 80%;
     flex-direction: column;
     align-items: center;
     justify-items: flex-start;
@@ -1005,7 +1005,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
     background-color: #e7d329;
     border: 0px;
     margin-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
@@ -1966,7 +1966,7 @@ footer {
 
     .form fieldset {
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 30% 70%;
         gap: 10px;
         align-items: center;
         margin-top: 5px;
@@ -2098,13 +2098,13 @@ footer {
     .checkbox {
         width: 500px;
         display: grid;
-        grid-template-columns: 5% 20% 5% 20% 5% 44%;
+        grid-template-columns: 4% 21% 4% 26% 4% 40%;
         flex-direction: column;
         align-items: center;
         justify-items: flex-start;
         justify-content: space-between;
         text-wrap: nowrap;
-        gap: 15px;
+        gap: 5px;
         overflow: hidden;
     }
 
@@ -2130,6 +2130,7 @@ footer {
         border: 0px;
         margin-top: 20px;
         font-weight: 700;
+        padding-bottom: 0px;
         text-transform: uppercase;
     }
 
