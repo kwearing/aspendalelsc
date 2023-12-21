@@ -25,20 +25,20 @@
             <section class="overlay">
                 <h2>Join Aspendale Life Saving Club</h2>
                 <p>Complete the form to register for the next season</p>
-                <form action="https://formsubmit.co/membership@aspendalelsc.org" method="POST">
+                <form id="form" action="https://formsubmit.co/el/pefopi" method="POST">
                     <section class="form">
                         <fieldset>
-                            <label for=""><p>First Name</p></label>
-                            <input type="text" id="firstname-input" placeholder="Enter your First Name" name="firstname" required></fieldset>
+                            <p>First Name</p>
+                            <input type="text" id="firstname-input" placeholder="Please enter your First Name" name="firstname" required autocomplete="given-name"></fieldset>
                         <fieldset>
-                            <label for=""><p>Last Name</p></label>
-                            <input type="text" id="lastname-input" placeholder="Enter your Last Name" name="lastname" required></fieldset>
+                            <p>Last Name</p>
+                            <input type="text" id="lastname-input" placeholder="Please enter your Last Name" name="lastname" required autocomplete="family-name"></fieldset>
                         <fieldset>
-                            <label><p>Email address</p></label>
-                            <input type="email" id="email-input" placeholder="Your primary email address" name="email" required></fieldset>
+                            <p>Email</p>
+                            <input type="email" id="email-input" placeholder="Your primary email address" name="email" required autocomplete="email"></fieldset>
                         <fieldset>
-                            <label for=""><p>Contact number</p></label>
-                            <input type="tel" id="contactnumber-input" placeholder="Your primary phone number" name="phonenumber" required></fieldset>
+                            <p>Phone number</p>
+                            <input type="tel" id="contactnumber-input" placeholder="Your primary phone number" name="phonenumber" required autocomplete="mobile"></fieldset>
                     </section>
 
                     <section class="membership">
@@ -59,9 +59,9 @@
                             <input type="checkbox" name="Nippers" id="nippers"><label for="nippers"><p>Nippers</p></label>
                         </section>
 
+                        <h3>Working with Children Check (WWCC)</h3>
                         <section class="wwc-check">
-                            <h3>Working with Children Check (WWCC)</h3>
-                            <section class="checkbox">
+                            <section class="checkbox wwc">
                                 <input type="checkbox" name="wwc" id="wwc"><label for="wwc"><p>I confirm I have a valid WWCC</p></label>
                             </section>
                         </section>
